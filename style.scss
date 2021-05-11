@@ -1,0 +1,17 @@
+@import './assets/styles/header';
+@import './assets/styles/register';
+@import './assets/styles/index';
+
+
+
+body{
+    &.light-theme{
+        background: rgb(245, 251, 255);
+    }
+
+    &.dark-theme{
+        background: rgb(122, 146, 161);
+    }
+}
+
+

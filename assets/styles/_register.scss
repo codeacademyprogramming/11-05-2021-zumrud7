@@ -1,0 +1,33 @@
+#register {
+    padding: 50px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+
+      .notification{
+        padding: 7px 14px;
+        border-radius: 4px;
+        background: rgba(241, 145, 145, 0.384);
+        border:1.5px solid rgb(192, 125, 125);
+        color: rgb(116, 62, 62);
+        font-weight: 600;
+        font-size: 12px;
+        margin-bottom: 20px;
+        display: none;
+
+      }
+  
+      .input_wrapper{
+          margin-bottom: 20px;
+      }
+  
+      .btn-primary{
+          width: 100%;
+      }
+    }
+  }

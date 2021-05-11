@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <main>
+      <article id="register">
+        <div class="container">
+          <form id="register-form" name="register">
+            <h1 class="mb-4">Register</h1>
+            <div class="input_wrapper">
+              <label for="" class="form-label">Username</label>
+              <input type="text" class="form-control input-username" required />
+            </div>
+            <div class="input_wrapper">
+              <label for="" class="form-label">Full name</label>
+              <input type="text" class="form-control input-fullname" required />
+            </div>
+            <div class="input_wrapper">
+              <label for="" class="form-label">Email address</label>
+              <input type="email" class="form-control input-email" required />
+            </div>
+            <div class="input_wrapper">
+              <label for="" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control input-password"
+                required
+              />
+            </div>
+            <button
+              type="button"
+              id="register-form-submit"
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </article>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../app.js"></script>
+  </body>
+</html>

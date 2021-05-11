@@ -1,0 +1,40 @@
+#index {
+    padding: 100px 0;
+  
+    .form_wrap {
+      margin-bottom: 50px;
+      display: flex;
+  
+      input {
+        border: 1px solid #cfcece;
+        height: 40px;
+        border-radius: 4px;
+        width: 300px;
+        padding: 20px;
+      }
+  
+      button {
+        color: white;
+        background: rgb(143, 188, 240);
+        padding: 0 20px;
+        border: none;
+      }
+    }
+  
+    table {
+      tbody {
+        tr {
+          cursor: pointer;
+        }
+      }
+  
+      td {
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://use.fontawesome.com/f6659beed6.js"></script>
+  </head>
+  <body class="light-theme">
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="language-bar">
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="az"
+                  name="language"
+                  value="az"
+                  checked
+                />
+                <label for="az">
+                  <img src="../assets/images/az.gif" alt="" />
+                  <div class="overlay">AZ</div>
+                </label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="en" name="language" value="en" />
+                <label for="en">
+                  <img src="../assets/images/gb.jpg" alt="" />
+                  <div class="overlay">EN</div>
+                </label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="ru" name="language" value="ru" />
+                <label for="ru">
+                  <img src="../assets/images/ru.png" alt="" />
+                  <div class="overlay">RU</div>
+                </label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="es" name="language" value="es" />
+                <label for="es">
+                  <img src="../assets/images/sp.jpg" alt="" />
+                  <div class="overlay">ES</div>
+                </label>
+              </div>
+              <!-- <a href="" class="lang active" data-lang="az">
+              <img src="../assets/images/az.gif" alt="" />
+              <div class="overlay">AZ</div>
+            </a> -->
+              <!-- <a href="" class="lang" data-lang="en">
+              <img src="../assets/images/gb.jpg" alt="" />
+              <div class="overlay">EN</div>
+            </a> -->
+              <!-- <a href="" class="lang" data-lang="ru">
+              <img src="../assets/images/ru.png" alt="" />
+              <div class="overlay">RU</div>
+            </a>
+            <a href="" class="lang" data-lang="es">
+              <img src="../assets/images/sp.jpg" alt="" />
+              <div class="overlay">ES</div>
+            </a> -->
+            </div>
+            <div class="theme">
+              <div class="theme-options">
+                <p class="title">Choose theme</p>
+                <div class="radio">
+                  <input
+                    type="radio"
+                    id="light-theme"
+                    name="theme"
+                    value="light-theme"
+                    checked
+                  />
+                  <label for="light-theme"></label>
+                </div>
+                <div class="radio">
+                  <input
+                    type="radio"
+                    id="dark-theme"
+                    name="theme"
+                    value="dark-theme"
+                  />
+                  <label for="dark-theme"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-bottom">
+          <div id="user-profile">
+              
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article id="index">
+        <div class="container">
+          <form class="form_wrap">
+            <input
+              id="nameInput"
+              type="text"
+              placeholder="search customer...."
+            />
+            <button type="submit">Enter</button>
+          </form>
+          <table id="c-table" class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Name Surname</th>
+                <th scope="col">Image</th>
+                <th scope="col">Gross Salary</th>
+                <th scope="col">Has active loans</th>
+                <th scope="col">Net Salary</th>
+                <th scope="col">Applicable for Loan</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </article>
+    </main>
+
+    <div class="modal" id="customer-detail" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Customer Detail</h5>
+          </div>
+          <div class="modal-body">
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Loaner</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Is Active</th>
+                  <th scope="col">Monthly Pay</th>
+                  <th scope="col">Due Amount</th>
+                  <th scope="col">Start date</th>
+                  <th scope="col">End date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-toggle="modal" data-target="#customer-detail">
+                  <td>QNB</td>
+                  <td>3000 AZN</td>
+                  <td>Y</td>
+                  <td>2500AZN</td>
+                  <td>1350AZN</td>
+                  <td>21/12/2020</td>
+                  <td>21/12/2021</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../app.js"></script>
+    <script src="../login.js"></script>
+    <script src="../test.js"></script>
+  </body>
+</html>
